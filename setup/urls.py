@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from escola.views import AlunosViewSet, CursosViewSet
 
 #Registrar rotas
@@ -9,5 +9,5 @@ router.register('cursos', CursosViewSet, basename='Cursos')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('alunos/', alunos),
+    path('', include(router.urls))
 ]
