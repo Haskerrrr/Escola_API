@@ -15,3 +15,7 @@ class MatriculaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Matricula
         exclude = []
+
+class ListaMatriculasAlunoSerializer(serializer.ModelSerializer):
+    model = Matricula
+    fields = ['curso', 'periodo']
