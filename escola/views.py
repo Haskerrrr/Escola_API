@@ -15,3 +15,4 @@ class CursosViewSet(viewsets.ModelViewSet):
 class MatriculaViewSet(viewsets.ModelViewSet):
     #Listando todos os cursos
     queryset = Matricula.objects.all()
+    serializer_class = MatriculaSerializer
