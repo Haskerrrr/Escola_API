@@ -13,5 +13,5 @@ class CursoSerializer(serializers.ModelSerializer):
         
 class MatriculaSerializer(serializers.ModelSerializer):
     class Meta:
-        mdoel = Matricula
+        model = Matricula
         exclude = []
